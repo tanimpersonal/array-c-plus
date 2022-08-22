@@ -210,6 +210,40 @@ build min-max.exe: CXX_EXECUTABLE_LINKER__min-max_Debug CMakeFiles/min-max.dir/m
   TARGET_IMPLIB = libmin-max.dll.a
   TARGET_PDB = min-max.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target sort
+
+
+#############################################
+# Order-only phony target for sort
+
+build cmake_object_order_depends_target_sort: phony || CMakeFiles/sort.dir
+
+build CMakeFiles/sort.dir/sort.cpp.obj: CXX_COMPILER__sort_Debug G$:/CSE$ Funda/C++/array-and-builtIn-functions/sort.cpp || cmake_object_order_depends_target_sort
+  DEP_FILE = CMakeFiles\sort.dir\sort.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"G:/CSE Funda/C++/array-and-builtIn-functions/."
+  OBJECT_DIR = CMakeFiles\sort.dir
+  OBJECT_FILE_DIR = CMakeFiles\sort.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sort
+
+
+#############################################
+# Link the executable sort.exe
+
+build sort.exe: CXX_EXECUTABLE_LINKER__sort_Debug CMakeFiles/sort.dir/sort.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\sort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = sort.exe
+  TARGET_IMPLIB = libsort.dll.a
+  TARGET_PDB = sort.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -244,6 +278,8 @@ build function-and-pointers: phony function-and-pointers.exe
 
 build min-max: phony min-max.exe
 
+build sort: phony sort.exe
+
 build swap: phony swap.exe
 
 # =============================================================================
@@ -254,7 +290,7 @@ build swap: phony swap.exe
 #############################################
 # Folder: G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug
 
-build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe swap.exe min-max.exe
+build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe swap.exe min-max.exe sort.exe
 
 # =============================================================================
 # Built-in targets

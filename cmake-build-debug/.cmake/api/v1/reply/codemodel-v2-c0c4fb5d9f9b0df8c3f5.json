@@ -19,7 +19,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -38,7 +39,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -70,6 +72,13 @@
 					"id" : "min-max::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-min-max-Debug-1f74d7025a401d52fd61.json",
 					"name" : "min-max",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sort::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sort-Debug-e8094f28b677395d6e17.json",
+					"name" : "sort",
 					"projectIndex" : 0
 				},
 				{
