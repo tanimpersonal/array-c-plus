@@ -10,3 +10,4 @@ add_executable(array_and_builtIn_functions
 
 add_executable(function-and-pointers function-and-pointers.cpp)
 add_executable(dynamic-allocation dynamic-allocation.cpp)
+add_executable(swap swap.cpp)

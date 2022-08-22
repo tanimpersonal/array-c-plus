@@ -142,6 +142,40 @@ build dynamic-allocation.exe: CXX_EXECUTABLE_LINKER__dynamic-allocation_Debug CM
   TARGET_IMPLIB = libdynamic-allocation.dll.a
   TARGET_PDB = dynamic-allocation.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target swap
+
+
+#############################################
+# Order-only phony target for swap
+
+build cmake_object_order_depends_target_swap: phony || CMakeFiles/swap.dir
+
+build CMakeFiles/swap.dir/swap.cpp.obj: CXX_COMPILER__swap_Debug G$:/CSE$ Funda/C++/array-and-builtIn-functions/swap.cpp || cmake_object_order_depends_target_swap
+  DEP_FILE = CMakeFiles\swap.dir\swap.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"G:/CSE Funda/C++/array-and-builtIn-functions/."
+  OBJECT_DIR = CMakeFiles\swap.dir
+  OBJECT_FILE_DIR = CMakeFiles\swap.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target swap
+
+
+#############################################
+# Link the executable swap.exe
+
+build swap.exe: CXX_EXECUTABLE_LINKER__swap_Debug CMakeFiles/swap.dir/swap.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\swap.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = swap.exe
+  TARGET_IMPLIB = libswap.dll.a
+  TARGET_PDB = swap.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -174,6 +208,8 @@ build dynamic-allocation: phony dynamic-allocation.exe
 
 build function-and-pointers: phony function-and-pointers.exe
 
+build swap: phony swap.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -182,7 +218,7 @@ build function-and-pointers: phony function-and-pointers.exe
 #############################################
 # Folder: G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug
 
-build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe
+build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe swap.exe
 
 # =============================================================================
 # Built-in targets
