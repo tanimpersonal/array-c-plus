@@ -108,6 +108,40 @@ build function-and-pointers.exe: CXX_EXECUTABLE_LINKER__function-and-pointers_De
   TARGET_IMPLIB = libfunction-and-pointers.dll.a
   TARGET_PDB = function-and-pointers.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target dynamic-allocation
+
+
+#############################################
+# Order-only phony target for dynamic-allocation
+
+build cmake_object_order_depends_target_dynamic-allocation: phony || CMakeFiles/dynamic-allocation.dir
+
+build CMakeFiles/dynamic-allocation.dir/dynamic-allocation.cpp.obj: CXX_COMPILER__dynamic-allocation_Debug G$:/CSE$ Funda/C++/array-and-builtIn-functions/dynamic-allocation.cpp || cmake_object_order_depends_target_dynamic-allocation
+  DEP_FILE = CMakeFiles\dynamic-allocation.dir\dynamic-allocation.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"G:/CSE Funda/C++/array-and-builtIn-functions/."
+  OBJECT_DIR = CMakeFiles\dynamic-allocation.dir
+  OBJECT_FILE_DIR = CMakeFiles\dynamic-allocation.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dynamic-allocation
+
+
+#############################################
+# Link the executable dynamic-allocation.exe
+
+build dynamic-allocation.exe: CXX_EXECUTABLE_LINKER__dynamic-allocation_Debug CMakeFiles/dynamic-allocation.dir/dynamic-allocation.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\dynamic-allocation.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = dynamic-allocation.exe
+  TARGET_IMPLIB = libdynamic-allocation.dll.a
+  TARGET_PDB = dynamic-allocation.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +170,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build array_and_builtIn_functions: phony array_and_builtIn_functions.exe
 
+build dynamic-allocation: phony dynamic-allocation.exe
+
 build function-and-pointers: phony function-and-pointers.exe
 
 # =============================================================================
@@ -146,7 +182,7 @@ build function-and-pointers: phony function-and-pointers.exe
 #############################################
 # Folder: G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug
 
-build all: phony array_and_builtIn_functions.exe function-and-pointers.exe
+build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe
 
 # =============================================================================
 # Built-in targets
