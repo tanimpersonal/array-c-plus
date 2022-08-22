@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "array_and_builtIn_functions",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "array_and_builtIn_functions::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-array_and_builtIn_functions-Debug-3852924f97c7159040a9.json",
 					"name" : "array_and_builtIn_functions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "function-and-pointers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-function-and-pointers-Debug-e9f1d118164539193965.json",
+					"name" : "function-and-pointers",
 					"projectIndex" : 0
 				}
 			]

@@ -7,3 +7,5 @@ include_directories(.)
 
 add_executable(array_and_builtIn_functions
         basic-array.cpp)
+
+add_executable(function-and-pointers function-and-pointers.cpp)
