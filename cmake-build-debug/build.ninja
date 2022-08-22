@@ -176,6 +176,40 @@ build swap.exe: CXX_EXECUTABLE_LINKER__swap_Debug CMakeFiles/swap.dir/swap.cpp.o
   TARGET_IMPLIB = libswap.dll.a
   TARGET_PDB = swap.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target min-max
+
+
+#############################################
+# Order-only phony target for min-max
+
+build cmake_object_order_depends_target_min-max: phony || CMakeFiles/min-max.dir
+
+build CMakeFiles/min-max.dir/min-max.cpp.obj: CXX_COMPILER__min-max_Debug G$:/CSE$ Funda/C++/array-and-builtIn-functions/min-max.cpp || cmake_object_order_depends_target_min-max
+  DEP_FILE = CMakeFiles\min-max.dir\min-max.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"G:/CSE Funda/C++/array-and-builtIn-functions/."
+  OBJECT_DIR = CMakeFiles\min-max.dir
+  OBJECT_FILE_DIR = CMakeFiles\min-max.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target min-max
+
+
+#############################################
+# Link the executable min-max.exe
+
+build min-max.exe: CXX_EXECUTABLE_LINKER__min-max_Debug CMakeFiles/min-max.dir/min-max.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\min-max.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = min-max.exe
+  TARGET_IMPLIB = libmin-max.dll.a
+  TARGET_PDB = min-max.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -208,6 +242,8 @@ build dynamic-allocation: phony dynamic-allocation.exe
 
 build function-and-pointers: phony function-and-pointers.exe
 
+build min-max: phony min-max.exe
+
 build swap: phony swap.exe
 
 # =============================================================================
@@ -218,7 +254,7 @@ build swap: phony swap.exe
 #############################################
 # Folder: G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug
 
-build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe swap.exe
+build all: phony array_and_builtIn_functions.exe function-and-pointers.exe dynamic-allocation.exe swap.exe min-max.exe
 
 # =============================================================================
 # Built-in targets

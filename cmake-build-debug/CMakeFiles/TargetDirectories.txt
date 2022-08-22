@@ -2,5 +2,6 @@ G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/array_
 G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/function-and-pointers.dir
 G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/dynamic-allocation.dir
 G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/swap.dir
+G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/min-max.dir
 G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/edit_cache.dir
 G:/CSE Funda/C++/array-and-builtIn-functions/cmake-build-debug/CMakeFiles/rebuild_cache.dir

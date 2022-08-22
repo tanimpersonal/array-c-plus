@@ -18,7 +18,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -36,7 +37,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -61,6 +63,13 @@
 					"id" : "function-and-pointers::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-function-and-pointers-Debug-e9f1d118164539193965.json",
 					"name" : "function-and-pointers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "min-max::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-min-max-Debug-1f74d7025a401d52fd61.json",
+					"name" : "min-max",
 					"projectIndex" : 0
 				},
 				{
